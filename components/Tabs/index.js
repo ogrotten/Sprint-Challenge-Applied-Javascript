@@ -7,3 +7,35 @@
 //
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
+
+//#region Convenience Functions
+
+function clg(...x) {
+	for (let exes of x) console.log(exes);
+}
+const DCE = x => document.createElement(x);
+
+//#endregion Convenience Functions
+
+function showTabs(data) {
+	let alltabs = [];
+
+	data.forEach(e => {
+		let ret = DCE("div");
+		ret.classList = "tab";
+		ret.textContent = e;
+		// clg(ret);
+		document.querySelector(".topics").append(ret);
+	});
+}
+
+axios
+	.get("https://lambda-times-backend.herokuapp.com/topics")
+	.then(res => {
+		data = res.data;
+		// clg(data.topics);
+		showTabs(data.topics);
+	})
+	.catch(res => {
+		clg("problem with tabs.");
+	});
