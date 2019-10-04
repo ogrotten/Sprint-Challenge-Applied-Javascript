@@ -1,3 +1,24 @@
+# QUESTION & ANSWER
+# QUESTION & ANSWER
+# QUESTION & ANSWER
+
+1. What is the DOM?
+Document Object Model. It is a data object that contains a reference to a web page.
+
+2. What is an event?
+An action performed on a web page.
+
+3. What is an event listener?
+A code element that looks for a specific event occurring on a specific element.
+
+4. Why would we convert a NodeList into an Array?
+Because a nodelist is a representation of what exists in the browser, while an array is a JS object with all the methods and conveniences.
+
+5. What is a component?
+A component is typically a reusable, separate, functionally complete fragment of code that handles a specific duty.
+
+
+
 # Sprint-Challenge Applied Javascript - Lambda Times
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored the DOM and the concept of components. During this Sprint, you studied the DOM, DOM Events, and Components, as well as HTTP GET requests, and the axios library. In your challenge this week, you will demonstrate proficiency by creating an online Lambda newspaper called "Lambda Times."
@@ -28,15 +49,6 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the DOM?
-
-2. What is an event?
-
-3. What is an event listener?
-
-4. Why would we convert a NodeList into an Array?
-
-5. What is a component?
 
 ### Git Set up
 
