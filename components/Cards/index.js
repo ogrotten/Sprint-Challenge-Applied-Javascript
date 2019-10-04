@@ -18,23 +18,29 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
-function createCard() {
+function createCard(data) {
 	const outer = DCE("div");
     outer.classList = "card";
-    outer.textContent
     
-	const date = DCE("span");
-	date.classList = "date";
-    date.textContent = "SMARCH 28, 2019"
+	const headline = DCE("div");
+	headline.classList = "headline";
+    headline.textContent = "headline" //`${headline}`
     
-	const title = DCE("h1");
-    title.textContent = "Lambda Times"
+    const author = DCE("div");
+    author.classList = "author";
+    const avcontainer = DCE("div")
+    avcontainer.classList = "img-container";
+    const avatar = DCE("img")
+    avatar.src = "url"
+    const byline = DCE("span")
+    byline.textContent = "author"
+
+    avcontainer.append(avatar)
+    author.append(avcontainer, byline)
     
-	const degrees = DCE("span");
-	degrees.classList = "temp";
-    degrees.textContent = "98°"
-    
-    outer.append(date, title, degrees)
+    outer.append(headline, author)
     return outer;
 }
-document.querySelector(".header-container").append(Header())
+
+clg(createCard())
+// document.querySelector(".cards-container").append(createCard())
